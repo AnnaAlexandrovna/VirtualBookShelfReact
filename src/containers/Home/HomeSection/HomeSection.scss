@@ -1,0 +1,63 @@
+@import '../../../styles/displaySettings.scss';
+.home-page-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    @include media("<=phone") {
+        flex-direction: column;
+    }
+    @include media(">phone") {
+        flex-direction: column;
+    }
+    @include media(">=815px", "<desktop") {
+        flex-direction: row;
+    }
+    @include media(">=desktop") {
+        flex-direction: row;
+    }
+    &__first {
+        @include media("<=phone") {
+             :nth-child(1) {
+                order: 0;
+            }
+        }
+        @include media(">phone") {
+             :nth-child(1) {
+                order: 0;
+            }
+        }
+        @include media(">=815px", "<desktop") {
+             :nth-child(1) {
+                order: 0;
+            }
+        }
+        @include media(">=desktop") {
+             :nth-child(1) {
+                order: 0;
+            }
+        }
+    }
+    &__second {
+        @include media("<=phone") {
+             :nth-child(1) {
+                order: 0;
+            }
+        }
+        @include media(">phone") {
+             :nth-child(1) {
+                order: 0;
+            }
+        }
+        @include media(">=815px", "<desktop") {
+             :nth-child(1) {
+                order: 1;
+            }
+        }
+        @include media(">=desktop") {
+             :nth-child(1) {
+                order: 1;
+            }
+        }
+    }
+}

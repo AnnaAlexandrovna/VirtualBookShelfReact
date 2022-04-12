@@ -1,0 +1,111 @@
+@import '../../styles/colors.scss';
+@import '../../styles/displaySettings.scss';
+@import '../../styles/boarderRadius.scss';
+.add-comments-section {
+    width: 95%;
+    &__container {
+        background-color: $grey-color-light;
+        margin-bottom: 0.5rem;
+        padding-bottom: 1.1rem;
+        width: 100%;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        @include media("<=phone") {
+            border-radius: $border-radius-less-phone;
+        }
+        @include media(">phone") {
+            border-radius: $border-radius-phone;
+        }
+        @include media(">=815px", "<desktop") {
+            border-radius: $border-radius-tablet;
+        }
+        @include media(">=desktop") {
+            border-radius: $border-radius-desktop;
+        }
+        &__row {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            margin-left: 0.5rem;
+            &__text {
+                margin-top: 1rem;
+                margin-bottom: 0.2rem;
+            }
+        }
+        &__content-section {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            @include media("<=phone") {
+                font-size: 100%;
+            }
+            @include media(">phone") {
+                font-size: 95%;
+            }
+            @include media(">=815px", "<desktop") {
+                font-size: 85%;
+            }
+            @include media(">=desktop") {
+                font-size: 90%;
+            }
+        }
+        &__input {
+            resize: none;
+            width: 95%;
+            margin-top: 0.1rem;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            border: solid 1px #ccc;
+            @include media("<=phone") {
+                border-radius: $border-radius-less-phone;
+            }
+            @include media(">phone") {
+                border-radius: $border-radius-phone;
+            }
+            @include media(">=815px", "<desktop") {
+                border-radius: $border-radius-tablet;
+            }
+            @include media(">=desktop") {
+                border-radius: $border-radius-desktop;
+            }
+            outline: none;
+        }
+        &__sent-button-container {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 0.5%;
+            padding-right: 4%;
+            &__button {
+                width: 7rem;
+                margin-left: 0.5%;
+                margin-top: 0.1rem;
+                background-color: $grey-color-dark;
+                border-color: $grey-color-light;
+                @include media("<=phone") {
+                    border-radius: $border-radius-less-phone;
+                    border: 0.1rem solid transparent;
+                    font-size: 60%;
+                }
+                @include media(">phone") {
+                    border-radius: $border-radius-phone;
+                    border: 0.2rem solid transparent;
+                    font-size: 80%;
+                }
+                @include media(">=815px", "<desktop") {
+                    border-radius: $border-radius-tablet;
+                    border: 0.3rem solid transparent;
+                    font-size: 80%;
+                }
+                @include media(">=desktop") {
+                    border-radius: $border-radius-desktop;
+                    border: 0.3rem solid transparent;
+                    font-size: 80%;
+                }
+                &:hover:enabled {
+                    background-color: darken($grey-color-dark, 5%);
+                }
+            }
+        }
+    }
+}

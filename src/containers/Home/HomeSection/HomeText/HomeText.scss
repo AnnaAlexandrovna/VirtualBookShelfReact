@@ -1,0 +1,19 @@
+@import '../../../../styles/displaySettings.scss';
+.home-page-text {
+    @include media("<=phone") {
+        width: 80%;
+        font-size: 70%;
+    }
+    @include media(">phone") {
+        width: 80%;
+        font-size: 80%;
+    }
+    @include media(">=815px", "<desktop") {
+        width: 30%;
+        font-size: 120%;
+    }
+    @include media(">=desktop") {
+        width: 30%;
+        font-size: 120%;
+    }
+}

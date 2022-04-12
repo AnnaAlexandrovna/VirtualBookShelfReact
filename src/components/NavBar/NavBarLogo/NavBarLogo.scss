@@ -1,0 +1,38 @@
+@import '../../../styles/displaySettings.scss';
+@import '../../../styles/boarderRadius.scss';
+.navbar-logo {
+    @include media("<=phone") {
+        height: 2rem;
+        margin: 0.5rem;
+    }
+    @include media(">phone") {
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    @include media(">=815px", "<desktop") {
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    @include media(">=desktop") {
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    &-short {
+        @include media("<=phone") {
+            width: 2rem;
+            border-radius: $border-radius-less-phone
+        }
+        @include media(">phone") {
+            width: 3rem;
+            border-radius: $border-radius-phone;
+        }
+    }
+    &-long {
+        @include media(">=815px", "<desktop") {
+            border-radius: $border-radius-tablet;
+        }
+        @include media(">=desktop") {
+            border-radius: $border-radius-desktop;
+        }
+    }
+}

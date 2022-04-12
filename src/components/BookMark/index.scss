@@ -1,0 +1,90 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/displaySettings.scss';
+@import '../../styles/colors.scss';
+.book-mark-chosen-container {
+    position: absolute;
+    z-index: 1;
+    &__square--active {
+        width: 0;
+        height: 0;
+        @include media("<=phone") {
+            border: 0.8rem solid $orange-color-dark;
+        }
+        @include media(">phone") {
+            border: 1rem solid $orange-color-dark;
+        }
+        @include media(">=815px", "<desktop") {
+            border: 1.3rem solid $orange-color-dark;
+        }
+        @include media(">=desktop") {
+            border: 1.5rem solid $orange-color-dark;
+        }
+    }
+    &__square--not-active {
+        width: 0;
+        height: 0;
+        @include media("<=phone") {
+            border: 0.8rem solid $grey-color-dark;
+        }
+        @include media(">phone") {
+            border: 1rem solid $grey-color-dark;
+        }
+        @include media(">=815px", "<desktop") {
+            border: 1.3rem solid $grey-color-dark;
+        }
+        @include media(">=desktop") {
+            border: 1.5rem solid $grey-color-dark;
+        }
+    }
+    &__arrow--active {
+        width: 0;
+        height: 0;
+        @include media("<=phone") {
+            border-left: 0.8rem solid $orange-color-dark;
+            border-right: 0.8rem solid $orange-color-dark;
+            border-bottom: 0.8rem solid transparent;
+        }
+        @include media(">phone") {
+            border-left: 1rem solid $orange-color-dark;
+            border-right: 1rem solid $orange-color-dark;
+            border-bottom: 1rem solid transparent;
+        }
+        @include media(">=815px", "<desktop") {
+            border-left: 1.3rem solid $orange-color-dark;
+            border-right: 1.3rem solid $orange-color-dark;
+            border-bottom: 1.3rem solid transparent;
+        }
+        @include media(">=desktop") {
+            border-left: 1.5rem solid $orange-color-dark;
+            border-right: 1.5rem solid $orange-color-dark;
+            border-bottom: 1.5rem solid transparent;
+        }
+    }
+    &__arrow--not-active {
+        width: 0;
+        height: 0;
+        @include media("<=phone") {
+            border-left: 0.8rem solid $grey-color-dark;
+            border-right: 0.8rem solid $grey-color-dark;
+            border-bottom: 0.8rem solid transparent;
+        }
+        @include media(">phone") {
+            border-left: 1rem solid $grey-color-dark;
+            border-right: 1rem solid $grey-color-dark;
+            border-bottom: 1rem solid transparent;
+        }
+        @include media(">=815px", "<desktop") {
+            border-left: 1.3rem solid $grey-color-dark;
+            border-right: 1.3rem solid $grey-color-dark;
+            border-bottom: 1.3rem solid transparent;
+        }
+        @include media(">=desktop") {
+            border-left: 1.5rem solid $grey-color-dark;
+            border-right: 1.5rem solid $grey-color-dark;
+            border-bottom: 1.5rem solid transparent;
+        }
+    }
+    &:hover {
+        @include box-shadow( 2px 0 0 rgba( black, .9));
+    }
+}

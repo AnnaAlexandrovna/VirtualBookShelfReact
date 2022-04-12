@@ -1,0 +1,37 @@
+@import '../../styles/displaySettings.scss';
+.title-second {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    @include media("<=phone") {
+        font-size: 70%;
+        margin-bottom: 1%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    @include media(">phone") {
+        font-size: 90%;
+        margin-bottom: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @include media(">=815px", "<desktop") {
+        font-size: 140%;
+        margin-bottom: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    @include media(">=desktop") {
+        font-size: 130%;
+        margin-bottom: 0.3%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    &--left {
+        text-align: left;
+        margin-left: 5%;
+    }
+    &--center {
+        text-align: center;
+    }
+}

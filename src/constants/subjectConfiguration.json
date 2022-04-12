@@ -1,0 +1,163 @@
+{
+    "subjects": {
+        "generalCollections": {
+            "collectionContent": [
+                "art",
+                "fiction",
+                "history",
+                "kids_books",
+                "horror"
+            ],
+            "collectionContentLanguage": [
+                "subjects.art",
+                "subjects.fiction",
+                "subjects.history",
+                "subjects.kids",
+                "subjects.horror"
+            ]
+        },
+        "collections": [
+            {
+                "displayCarousel": true,
+                "collectionName": "subjects.art",
+                "collectionId": "art",
+                "collectionContent": [
+                    "art",
+                    "architecture",
+                    "art_history",
+                    "dance",
+                    "design",
+                    "fashion",
+                    "film",
+                    "graphic_design",
+                    "music",
+                    "painting",
+                    "photography"
+                ],
+                "collectionContentLanguage": [
+                    "subjects.art",
+                    "subjects.architecture",
+                    "subjects.artHistory",
+                    "subjects.dance",
+                    "subjects.design",
+                    "subjects.fashion",
+                    "subjects.film",
+                    "subjects.graphicDesign",
+                    "subjects.music",
+                    "subjects.painting",
+                    "subjects.photography"
+                ]
+            },
+            {
+                "displayCarousel": true,
+                "collectionName": "subjects.fiction",
+                "collectionId": "fiction",
+                "collectionContent": [
+                    "fantasy",
+                    "historical_fiction",
+                    "horror",
+                    "humor",
+                    "magic",
+                    "plays",
+                    "science_fiction",
+                    "short_stories",
+                    "fiction",
+                    "comic_books"
+                ],
+                "collectionContentLanguage": [
+                    "subjects.fantasy",
+                    "subjects.historicalFiction",
+                    "subjects.horror",
+                    "subjects.humor",
+                    "subjects.magic",
+                    "subjects.plays",
+                    "subjects.scienceFiction",
+                    "subjects.shortStories",
+                    "subjects.fiction",
+                    "subjects.comicBooks"
+                ]
+            },
+            {
+                "displayCarousel": true,
+                "collectionName": "subjects.science",
+                "collectionId": "science",
+                "collectionContent": [
+                    "biology",
+                    "chemistry",
+                    "mathematics",
+                    "physics",
+                    "programming",
+                    "technology",
+                    "science",
+                    "medical",
+                    "nature",
+                    "zoology",
+                    "history"
+                ],
+                "collectionContentLanguage": [
+                    "subjects.biology",
+                    "subjects.chemistry",
+                    "subjects.mathematics",
+                    "subjects.physics",
+                    "subjects.programming",
+                    "subjects.technology",
+                    "subjects.science",
+                    "subjects.medical",
+                    "subjects.nature",
+                    "subjects.zoology",
+                    "subjects.history"
+                ]
+            },
+            {
+                "displayCarousel": true,
+                "collectionName": "subjects.businessFinance",
+                "collectionId": "business_&_finance",
+                "collectionContent": [
+                    "finance",
+                    "management",
+                    "marketing",
+                    "planning",
+                    "leadership",
+                    "commerce",
+                    "economics",
+                    "business_&_finance"
+                ],
+                "collectionContentLanguage": [
+                    "subjects.finance",
+                    "subjects.management",
+                    "subjects.marketing",
+                    "subjects.planning",
+                    "subjects.leadership",
+                    "subjects.commerce",
+                    "subjects.economics",
+                    "subjects.businessFinance"
+                ]
+            },
+            {
+                "displayCarousel": true,
+                "collectionName": "subjects.children",
+                "collectionId": "children's",
+                "collectionContent": [
+                    "kids_books",
+                    "children's",
+                    "stories_in_rhyme",
+                    "baby_books",
+                    "picture_books",
+                    "bedtime_books",
+                    "friendship",
+                    "schools"
+                ],
+                "collectionContentLanguage": [
+                    "subjects.kids",
+                    "subjects.children",
+                    "subjects.storiesInRhyme",
+                    "subjects.babyBooks",
+                    "subjects.pictureBooks",
+                    "subjects.bedtimeBooks",
+                    "subjects.friendship",
+                    "subjects.schools"
+                ]
+            }
+        ]
+    }
+}

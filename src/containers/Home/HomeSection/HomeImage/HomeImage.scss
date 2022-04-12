@@ -1,0 +1,17 @@
+@import '../../../../styles/displaySettings.scss';
+.home-page-section-image {
+    margin-left: 5%;
+    margin-right: 5%;
+    @include media("<=phone") {
+        width: 50%;
+    }
+    @include media(">phone") {
+        width: 50%;
+    }
+    @include media(">=815px", "<desktop") {
+        width: 25%;
+    }
+    @include media(">=desktop") {
+        width: 20%;
+    }
+}

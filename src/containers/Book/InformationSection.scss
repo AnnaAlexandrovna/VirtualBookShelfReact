@@ -1,0 +1,100 @@
+@import '../../styles/colors.scss';
+@import '../../styles/displaySettings.scss';
+@import '../../styles/boarderRadius.scss';
+$grid__cols: 12;
+.information-section-container {
+    background-color: $grey-color-light;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1.1rem;
+    @include media("<=phone") {
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        border-radius: $border-radius-less-phone;
+        width: 95%;
+    }
+    @include media(">phone") {
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        border-radius: $border-radius-phone;
+        width: 95%;
+    }
+    @include media(">=815px", "<desktop") {
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        border-radius: $border-radius-tablet;
+        width: 95%;
+    }
+    @include media(">=desktop") {
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        border-radius: $border-radius-desktop;
+        width: 95%;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin-left: 0.5rem;
+    }
+    &__content-section {
+        width: 95%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display: flex;
+        @include media("<=phone") {
+            font-size: 100%;
+        }
+        @include media(">phone") {
+            font-size: 95%;
+        }
+        @include media(">=815px", "<desktop") {
+            font-size: 85%;
+        }
+        @include media(">=desktop") {
+            font-size: 90%;
+        }
+    }
+    &__links-section {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.8rem;
+        @include media("<=phone") {
+            font-size: 90%;
+        }
+        @include media(">phone") {
+            font-size: 90%;
+        }
+        @include media(">=815px", "<desktop") {
+            font-size: 90%;
+        }
+        @include media(">=desktop") {
+            font-size: 95%;
+        }
+    }
+    &__authors-section {
+        width: 95%;
+        margin-left: 1.5rem;
+        margin-right: 0.8rem;
+        display: flex;
+        flex-wrap: wrap;
+        @include media("<=phone") {
+            font-size: 75%;
+        }
+        @include media(">phone") {
+            font-size: 80%;
+        }
+        @include media(">=815px", "<desktop") {
+            font-size: 85%;
+        }
+        @include media(">=desktop") {
+            font-size: 90%;
+        }
+    }
+    &__buttons-section {
+        margin-left: 1rem;
+    }
+    &__isbn-section {
+        margin-left: 0.3rem;
+    }
+}

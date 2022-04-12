@@ -1,0 +1,23 @@
+@import '../../styles/colors.scss';
+@import '../../styles/boarderRadius.scss';
+.favorite-container {
+    background-color: $grey-color-light;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    @include media("<=phone") {
+        border-radius: $border-radius-less-phone;
+    }
+    @include media(">phone") {
+        border-radius: $border-radius-phone;
+    }
+    @include media(">=815px", "<desktop") {
+        border-radius: $border-radius-tablet;
+    }
+    @include media(">=desktop") {
+        border-radius: $border-radius-desktop;
+    }
+}

@@ -1,0 +1,7 @@
+@import '../../styles/displaySettings.scss';
+.collection-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}

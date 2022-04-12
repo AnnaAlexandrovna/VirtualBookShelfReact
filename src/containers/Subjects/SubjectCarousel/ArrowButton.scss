@@ -1,0 +1,37 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/displaySettings.scss';
+@import '../../../styles/boarderRadius.scss';
+.subject-container-arrow-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    @include media("<=phone") {
+        border-radius: $border-radius-less-phone;
+    }
+    @include media(">phone") {
+        border-radius: $border-radius-phone;
+    }
+    @include media(">=815px", "<desktop") {
+        border-radius: $border-radius-tablet;
+    }
+    @include media(">=desktop") {
+        border-radius: $border-radius-desktop;
+    }
+    &:hover {
+        background-color: $yellow-color-light;
+    }
+    &__img {
+        @include media("<=phone") {
+            width: 0.3rem;
+        }
+        @include media(">phone") {
+            width: 0.5rem;
+        }
+        @include media(">=815px", "<desktop") {
+            width: 0.4rem;
+        }
+        @include media(">=desktop") {
+            width: 0.5rem;
+        }
+    }
+}

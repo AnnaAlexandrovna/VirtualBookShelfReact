@@ -1,0 +1,30 @@
+@import '../../styles/displaySettings.scss';
+.title-third {
+    display: inline;
+    @include media("<=phone") {
+        font-size: 70%;
+        margin-left: 1rem;
+    }
+    @include media(">phone") {
+        font-size: 80%;
+        margin-left: 1rem;
+    }
+    @include media(">=815px", "<desktop") {
+        font-size: 100%;
+        margin-left: 1rem;
+    }
+    @include media(">=desktop") {
+        font-size: 90%;
+        margin-left: 1rem;
+    }
+    &--normal {
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &--bold {
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: 0.2rem;
+    }
+}

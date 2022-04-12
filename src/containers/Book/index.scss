@@ -1,0 +1,59 @@
+@import '../../styles/displaySettings.scss';
+$grid__cols: 12;
+.book-page-container {
+    max-width: 95%;
+    margin: 0 auto;
+    &__title {
+        margin: 2rem;
+        font-weight: bold;
+        @include media("<=phone") {
+            margin: 0.5rem;
+        }
+        @include media(">phone") {
+            margin: 0.5rem;
+        }
+        @include media(">=815px", "<desktop") {
+            margin: 1rem;
+        }
+        @include media(">=desktop") {
+            margin: 1rem;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        @include media("<=phone") {
+            flex-direction: column;
+        }
+        @include media(">phone") {
+            flex-direction: column;
+        }
+        @include media(">=815px", "<desktop") {
+            flex-direction: row;
+        }
+        @include media(">=desktop") {
+            flex-direction: row;
+        }
+    }
+    @for $i from 1 through $grid__cols {
+        &__col-#{$i} {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            @include media("<=phone") {
+                flex-basis: 100%;
+            }
+            @include media(">phone") {
+                flex-basis: 100%;
+            }
+            @include media(">=815px", "<desktop") {
+                flex-basis: (100 / ($grid__cols / $i)) * 1%;
+            }
+            @include media(">=desktop") {
+                flex-basis: (100 / ($grid__cols / $i)) * 1%;
+            }
+        }
+    }
+}

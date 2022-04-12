@@ -1,0 +1,35 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/boarderRadius.scss';
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    &__flipping-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+    &__book-section {
+        background-color: $grey-color-light;
+        @include media("<=phone") {
+            border-radius: $border-radius-less-phone;
+        }
+        @include media(">phone") {
+            border-radius: $border-radius-phone;
+        }
+        @include media(">=815px", "<desktop") {
+            border-radius: $border-radius-tablet;
+        }
+        @include media(">=desktop") {
+            border-radius: $border-radius-desktop;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App should match snapshot 1`] = `
+<ViewportProvider>
+  <Provider
+    store={
+      Object {
+        "@@observable": [Function],
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  >
+    <AddFavorites />
+    <LanguageProvider>
+      <Alert>
+        <BrowserRouter>
+          <Switch>
+            <Route
+              component={[Function]}
+              id="/subject"
+              path="/subject"
+            />
+            <Route
+              component={[Function]}
+              path="/favorites"
+            />
+            <Route
+              component={[Function]}
+              path="/book/:path/:bookId"
+            />
+            <Route
+              component={[Function]}
+              path="/collection/:collectionId"
+            />
+            <Route
+              component={[Function]}
+              path="/search"
+            />
+            <Route
+              component={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              path="/authorization"
+            />
+            <Route
+              component={[Function]}
+              path="/login"
+            />
+            <Route
+              component={[Function]}
+              path="/logout"
+            />
+            <Route
+              component={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                }
+              }
+              path="/"
+            />
+          </Switch>
+        </BrowserRouter>
+      </Alert>
+    </LanguageProvider>
+  </Provider>
+</ViewportProvider>
+`;

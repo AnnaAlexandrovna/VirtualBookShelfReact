@@ -1,0 +1,33 @@
+@import '../../styles/displaySettings.scss';
+.book-page-image-section {
+    &__image {
+        @include media("<=phone") {
+            width: 12rem;
+            height: 7rem;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+        @include media(">phone") {
+            width: 17.5rem;
+            height: 10rem;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+        @include media(">=815px", "<desktop") {
+            position: absolute;
+            top: 17%;
+            left: 7%;
+            width: 17%;
+            height: 40%;
+            object-fit: cover;
+        }
+        @include media(">=desktop") {
+            position: absolute;
+            top: 15%;
+            left: 7%;
+            width: 17%;
+            height: 40%;
+            object-fit: cover;
+        }
+    }
+}

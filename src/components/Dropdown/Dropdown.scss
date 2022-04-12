@@ -1,0 +1,57 @@
+@import '../../styles/displaySettings.scss';
+@import '../../styles/boarderRadius.scss';
+@import '../../styles/colors.scss';
+.dropdown {
+    margin: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    @include media("<=phone") {
+        font-size: 0.8rem;
+        padding-bottom: 0.4rem;
+    }
+    @include media(">phone") {
+        font-size: 85%;
+        padding-bottom: 0.5rem;
+    }
+    @include media(">=815px", "<desktop") {
+        font-size: 110%;
+        padding-bottom: 0.3rem;
+    }
+    @include media(">=desktop") {
+        font-size: 115%;
+        padding-bottom: 0.3rem;
+    }
+    &__content {
+        cursor: pointer;
+        position: absolute;
+        right: 5rem;
+        min-width: 3%;
+        @include media("<=phone") {
+            border-radius: $border-radius-less-phone
+        }
+        @include media(">phone") {
+            border-radius: $border-radius-phone
+        }
+        @include media(">=815px", "<desktop") {
+            border-radius: $border-radius-tablet
+        }
+        @include media(">=desktop") {
+            border-radius: $border-radius-desktop
+        }
+        &--active {
+            display: block;
+            min-width: 3%;
+            background-color: white;
+            padding: 1%;
+            background-color: $yellow-color-light;
+        }
+        &--not-active {
+            display: none;
+        }
+        &-items {
+            &:hover {
+                color: $orange-color-dark;
+            }
+        }
+    }
+}

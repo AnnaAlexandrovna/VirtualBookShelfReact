@@ -1,0 +1,53 @@
+@import '../../styles/colors.scss';
+@import '../../styles/displaySettings.scss';
+@import '../../styles/boarderRadius.scss';
+.book-card-image-container {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    margin: 1rem;
+    @include media("<=phone") {
+        height: 50vw;
+        border-radius: $border-radius-less-phone;
+    }
+    @include media(">phone") {
+        height: 30vw;
+        border-radius: $border-radius-phone;
+    }
+    @include media(">=815px", "<desktop") {
+        height: 20vw;
+        border-radius: $border-radius-tablet;
+    }
+    @include media(">=desktop") {
+        height: 20vw;
+        border-radius: $border-radius-desktop;
+    }
+    &__moc {
+        text-overflow: ellipsis;
+        background-image: url('../../assets/images/book.png');
+        background-size: cover;
+        &__text {
+            margin-left: 0.5rem;
+            @include media("<=phone") {
+                line-height: 50vw;
+                font-size: 70%;
+            }
+            @include media(">phone") {
+                line-height: 30vw;
+                font-size: 80%;
+            }
+            @include media(">=815px",
+            "<desktop") {
+                line-height: 20vw;
+                font-size: 80%;
+            }
+            @include media(">=desktop") {
+                line-height: 20vw;
+                font-size: 100%;
+            }
+        }
+    }
+    &__image {
+        height: 100%;
+    }
+}

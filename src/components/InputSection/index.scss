@@ -1,0 +1,55 @@
+@import '../../styles/boarderRadius.scss';
+@import '../../styles/displaySettings.scss';
+.search-section-nav {
+    width: 18rem;
+    height: 2.5rem;
+    cursor: pointer;
+    @include media("<=phone") {
+        border-radius: $border-radius-less-phone;
+    }
+    @include media(">phone") {
+        border-radius: $border-radius-phone;
+    }
+    @include media(">=815px", "<desktop") {
+        border-radius: $border-radius-tablet;
+    }
+    @include media(">=desktop") {
+        border-radius: $border-radius-desktop;
+    }
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #F4681E;
+    &__button {
+        margin-right: 0.3rem;
+        height: 1.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 128%;
+        width: 17rem;
+        text-align: center;
+        color: white;
+        &:hover {
+            background-color: darken(#F4681E, 10%);
+            @include media(">=815px", "<desktop") {
+                border-radius: $border-radius-tablet;
+            }
+            @include media(">=desktop") {
+                border-radius: $border-radius-desktop;
+            }
+            width: 17rem;
+        }
+    }
+    &__input {
+        width: 32rem;
+        margin: 0.3rem;
+        height: 1.5rem;
+        border: solid 1px #ccc;
+        @include media(">=815px", "<desktop") {
+            border-radius: $border-radius-tablet;
+        }
+        @include media(">=desktop") {
+            border-radius: $border-radius-desktop;
+        }
+        outline: none;
+    }
+}

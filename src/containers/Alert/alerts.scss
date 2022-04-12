@@ -1,0 +1,54 @@
+@import '../../styles/boarderRadius.scss';
+.alert {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    &__section {
+        width: 30%;
+        height: 100%;
+        margin: 1rem;
+        position: absolute;
+        display: flex;
+        flex-flow: column;
+        &__body {
+            width: 90%;
+            margin: 3%;
+            padding: 1%;
+            display: flex;
+            align-items: flex-start;
+            &--green {
+                background-color: lighten(Lightgreen, 15%);
+            }
+            &--red {
+                background-color: lighten(#ffcccb, 5%);
+            }
+            @include media("<=phone") {
+                border-radius: $border-radius-less-phone;
+            }
+            @include media(">phone") {
+                border-radius: $border-radius-phone;
+            }
+            @include media(">=815px", "<desktop") {
+                border-radius: $border-radius-tablet;
+            }
+            @include media(">=desktop") {
+                border-radius: $border-radius-desktop;
+            }
+            &__close {
+                margin-right: 2%;
+                justify-content: flex-end;
+                display: flex;
+                cursor: pointer;
+                font-size: 90%;
+            }
+            &__message {
+                width: 96%;
+                justify-content: center;
+                display: flex;
+                margin: 2%;
+                font-size: 110%;
+            }
+        }
+    }
+}

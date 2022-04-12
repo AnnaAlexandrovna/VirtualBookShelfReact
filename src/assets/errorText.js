@@ -1,0 +1,10 @@
+export const addToFavorites = 'Error adding book to favorite';
+export const errorDeleteComments = 'Error deleting comments';
+export const errorGetBookDetails = 'Error getting book details';
+export const errorGetBookComments = 'Error getting book comments';
+export const errorGetSearchData = 'Error getting search';
+export const errorGetCarouselData = 'Error getting carousel data';
+export const errorModifyBookComment = 'Error modify book comment';
+export const errorRemoveBookFromFavorites = 'Error remove book from favorites';
+export const errorSettingBookComment = 'Error adding book comments';
+export const errorGetSubjectData = 'Error getting subject data';

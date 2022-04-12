@@ -1,0 +1,45 @@
+@import '../../styles/colors.scss';
+@import '../../styles/displaySettings.scss';
+@import '../../styles/boarderRadius.scss';
+.button-light {
+    background-color: $yellow-color-light;
+    border-color: $grey-color-light;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    @include media("<=phone") {
+        border: 0.1rem solid transparent;
+        border-radius: $border-radius-less-phone;
+        font-size: 60%;
+        max-width: 7rem;
+        padding: 1px 3px;
+        margin: 0.1rem;
+    }
+    @include media(">phone") {
+        border: 0.2rem solid transparent;
+        border-radius: $border-radius-phone;
+        max-width: 7rem;
+        padding: 1px 3px;
+        margin: 0.2rem;
+    }
+    @include media(">=815px", "<desktop") {
+        border: 0.3rem solid transparent;
+        border-radius: $border-radius-tablet;
+        font-size: 90%;
+        max-width: 9rem;
+        padding: 1px 3px;
+        margin: 0.3rem;
+    }
+    @include media(">=desktop") {
+        border: 0.3rem solid transparent;
+        border-radius: $border-radius-desktop;
+        font-size: 90%;
+        max-width: 9rem;
+        padding: 1px 3px;
+        margin: 0.3rem;
+    }
+    &:hover {
+        background-color: $yellow-color-dark;
+    }
+}

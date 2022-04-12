@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render ButtonLight should match snapshot 1`] = `
+<Link
+  to="/collection/123"
+>
+  <button
+    className="button-light"
+    title="12334"
+  >
+    12334
+  </button>
+</Link>
+`;

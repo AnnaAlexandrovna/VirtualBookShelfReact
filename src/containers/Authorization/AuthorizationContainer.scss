@@ -1,0 +1,13 @@
+.authorization-page-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    &_buttons-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
